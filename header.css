@@ -123,9 +123,7 @@ align-items: center;
 }
 
 @media screen and (max-width: 1440px) {
-  .header{
-    background: black
-  }
+ 
 
 
 .titulo_header{
@@ -150,9 +148,7 @@ align-items: center;
 
 @media screen and (max-width: 1024px) {
 
-  .header{
-    background: black
-  }
+
 
   .elemento {
 
