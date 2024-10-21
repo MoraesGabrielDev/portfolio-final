@@ -1,0 +1,251 @@
+.capa{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10em 20em;
+}
+
+.imagem_capa.reveal{
+  width: 35%;
+}
+
+.botoes_capa{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.bold_capa{
+  font-family: var(--fonte-cabeçalho);
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ 
+}
+
+.titulo_capa{
+  font-family: var(--fonte-cabeçalho);
+  color: var(--branco);
+  font-size: 4em;
+  width: 1000px; /* Defina um valor apropriado */
+}
+
+
+.link_capa{
+  text-decoration: none;
+  color: var(--branco);
+  font-family: var(--fonte-cabeçalho);
+  background: transparent;
+  border: 2px solid var(--branco);
+  border-radius: 10px;
+  padding: 0.3em;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0.5em 0 1em 0;
+  transition: color 0.3s ease, border-color 0.3s ease;
+ 
+}
+
+.fa-github{
+margin-right: 1em;
+}
+
+.fa-linkedin{
+  margin-right: 1em;
+}
+
+.link_capa:hover{
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-color: #DC143C; /* Altera a cor da borda para combinar com o gradiente */
+}
+
+
+@media screen and (max-width: 1920px) {
+  .capa{
+    margin: 10em 10em;
+   
+  }
+  .imagem_capa.reveal{
+    width: 30%;
+  }
+
+  .titulo_capa{
+    font-size: 2.8em;
+    width: 700px;
+  }
+
+  .link_capa{
+    padding: 0.4em;
+    font-size: 1.3em;
+    margin: 1em 0 1em 0;
+  }
+
+ 
+}
+@media screen and (max-width: 1728px) {
+
+  .capa{
+    margin: 10em 10em;
+   
+  }
+  .imagem_capa.reveal{
+    width: 30%;
+  }
+
+  .titulo_capa{
+    font-size: 2.8em;
+    width: 700px;
+  }
+
+  .link_capa{
+    padding: 0.4em;
+    font-size: 1.3em;
+    margin: 1em 0 1em 0;
+  }
+
+ 
+}
+
+@media screen and (max-width: 1440px) {
+  .capa{
+    border-width: 10em 12em;
+  }
+  
+
+  .titulo_capa{
+    font-size: 1.8em;
+    width: 600px;
+    text-align: center;
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+  }
+
+
+ 
+}
+
+@media screen and (max-width: 1300px) {
+  .capa{
+    border-width: 10em 6em;
+  }
+  
+
+  .titulo_capa{
+    font-size: 1.8em;
+    width: 500px;
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .capa{
+    border-width: 10em 4em;
+  }
+  
+
+  .titulo_capa{
+    font-size: 1.8em;
+    width: 400px;
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .capa{
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .titulo_capa{
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+  }
+
+  .imagem_capa.reveal{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .capa{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo_capa{
+    font-size: 1.5em;
+  }
+
+  .capa{
+    margin: 10em 2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
+  }
+
+  .titulo_capa{
+  width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+
+  .titulo_capa{
+    width: 400px;
+    }
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
+  }
+ }
+
+
+@media screen and (max-width: 390px) {
+
+  .titulo_capa{
+    width: 300px;
+    }
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
+  }
+}

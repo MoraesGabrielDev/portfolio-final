@@ -1,0 +1,331 @@
+.minhas-habilidades{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5em 0;
+}
+
+.titulo_habilidades{
+  font-family: var(--fonte-cabeçalho);
+  font-size: 3em;
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 2em;
+}
+
+
+.lista_habilidades{
+  display: flex;
+  list-style: none;
+}
+
+ul.segunda_linha_habilidades{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+.icon-tailwind{
+  width: 70px;
+  margin-left: 4em;
+}
+
+.item_habilidades{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
+  margin: 5em 3em;
+  border-radius: 10px;
+}
+
+.item_habilidades {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.item_habilidades:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+}
+
+/* Opcional: Adicionar um efeito de sombra ao passar o mouse */
+.item_habilidades:hover svg {
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.9));
+}
+
+.descriçao_lista{
+  font-family: var(--fonte-cabeçalho);
+  color: var(--branco);
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+#section-mobile{
+  display: none;
+  }
+  .segunda-linha-habilidades-mobile{
+    display: none;
+    }
+
+@media screen and (max-width: 1728px) {
+
+  .titulo_habilidades_mobile{
+    display: none;
+    }
+
+  .minhas-habilidades{
+    margin: 3em 0;
+  }
+
+  .titulo_habilidades{
+    font-size: 3em;
+  }
+
+  .item_habilidades{
+
+    margin: 5em 3em;
+    
+  }
+  #section-mobile{
+    display: none;
+    }
+    .segunda-linha-habilidades-mobile{
+      display: none;
+      }
+}
+
+@media screen and (max-width: 1440px) {
+
+  .titulo_habilidades_mobile{
+    display: none;
+    }
+
+  .minhas-habilidades{
+    margin: 3em 0;
+  }
+
+  .titulo_habilidades{
+    font-size: 2em;
+  }
+
+  .descriçao_lista{
+    font-size: 1em;
+  }
+
+  .item_habilidades{
+    margin: 3em 2em;
+  }
+
+  .icon-tailwind{
+    width: 70px;
+    margin-left: 2em;
+  }
+
+  
+  #section-mobile{
+  display: none;
+  }
+  .segunda-linha-habilidades-mobile{
+  display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .titulo_habilidades_mobile{
+    display: none;
+    }
+
+  .minhas-habilidades{
+    margin: 4em 0;
+   
+  }
+
+  .titulo_habilidades{
+    font-size: 2em;
+  }
+
+  .descriçao_lista{
+    font-size: 1em;
+  }
+
+  .item_habilidades{
+    margin: 3em 2em;
+  }
+
+  .item_habilidades.tailwind{
+    transform: translateX(-15%);
+  }
+  #section-mobile{
+  display: none;
+  }
+  .segunda-linha-habilidades-mobile{
+  display: none;
+  }
+
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+  .titulo_habilidades_mobile{
+  display: none;
+  }
+  .minhas-habilidades{
+    margin: 4em 0;
+   
+  }
+
+  .titulo_habilidades{
+    font-size: 1.5em;
+  }
+
+  .descriçao_lista{
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 1em;
+    padding: 1em;
+  }
+
+  .item_habilidades{
+    margin: 3em 1.5em;
+   
+  }
+
+  .icon-tailwind{
+    width: 70px;
+    margin-left: 1.5em;
+    margin-top: 0.8em;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .titulo_habilidades_mobile{
+    display: none;
+    }
+
+  .minhas-habilidades{
+    margin: 4em 0;
+   
+  }
+
+  .titulo_habilidades{
+    font-size: 1.3em;
+  }
+
+  .descriçao_lista{
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 1em;
+    padding: 1em;
+  }
+
+  .item_habilidades{
+    margin: 3em 1.5em;
+   
+  }
+
+  .icon-tailwind{
+    width: 70px;
+    margin-left: 1.5em;
+    margin-top: 0.8em;
+  }
+
+
+}
+
+@media screen and (max-width: 430px) {
+  #section-mobile{
+    transform: translateX(18%);
+    }
+  
+  .titulo_habilidades_mobile{
+    font-size: 1.3em;
+    display: block;
+    font-family: var(--fonte-cabeçalho);
+ text-align: center;
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 2em;
+  }
+
+  .item_habilidades{
+    width: 3em;
+    margin: 2em 0.5em;
+   height: 4em;
+   
+  }
+
+  .descriçao_lista{
+    text-align: center;
+    padding: 0.3;
+    margin-bottom: -10px;
+    font-size: 0.5em;
+  }
+  .icon-tailwind{
+    width: 40px;
+    margin-left: 0.3em;
+    align-items: center;
+  }
+
+
+  li.item_habilidades #pg-2 {
+    display: none !important;
+  }
+
+ #section_desk{
+  display: none;
+}
+.titulo_habilidades{
+  text-align: center;
+}
+
+.item_habilidades.tailwind{
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
+  margin: 2em 1em;
+  transform: translateY(-27%);
+}
+#section-mobile{
+  display: block;
+  }
+.segunda-linha-habilidades-mobile{
+  margin-top: -3em;
+  display: block;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 390px) {
+  #section-mobile{
+  transform: translateX(15%);
+  }
+  .segunda-linha-habilidades-mobile{
+  transform: translate(-2%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #section-mobile{
+    transform: translateX(15%);
+    }
+    .segunda-linha-habilidades-mobile{
+    transform: translate(-4%);
+    }
+}
