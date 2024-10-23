@@ -1,8 +1,8 @@
 .capa{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 10em 25em;
+  justify-content: center;
+  margin: 10em 20em;
 }
 
 .imagem_capa.reveal{
@@ -12,7 +12,7 @@
 .botoes_capa{
   display: flex;
   flex-direction: column;
- 
+
 }
 
 .bold_capa{
@@ -28,7 +28,8 @@
   font-family: var(--fonte-cabeçalho);
   color: var(--branco);
   font-size: 4em;
-  width: 1000px; /* Defina um valor apropriado */
+  width: 950px;
+  text-align: center; /* Defina um valor apropriado */
 }
 
 
@@ -66,7 +67,7 @@ margin-right: 1em;
 
 @media screen and (max-width: 1920px) {
   .capa{
-    margin: 10em 20em;
+    margin: 10em 10em;
    
   }
   .imagem_capa.reveal{
@@ -76,6 +77,7 @@ margin-right: 1em;
   .titulo_capa{
     font-size: 2.8em;
     width: 700px;
+    text-align: center;
   }
 
   .link_capa{
@@ -99,6 +101,7 @@ margin-right: 1em;
   .titulo_capa{
     font-size: 2.8em;
     width: 700px;
+    text-align: center;
   }
 
   .link_capa{
