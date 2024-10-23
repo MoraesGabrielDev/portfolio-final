@@ -14,15 +14,7 @@
   rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="https://unpkg.com/scrollreveal"></script>
-<link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/css/">
-<!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- JQuery e Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <title>Gabriel Moraes</title>
 </head>
@@ -54,7 +46,7 @@
   
 
   <section class="capa">
-   <img class="imagem_capa reveal" src="assets/foto_transparent_careful.png"> 
+ 
    
 
    <div class="botoes_capa reveal">
@@ -140,7 +132,7 @@
 
   
   <section id="section-mobile">
-    
+    <h2 class="titulo_habilidades_mobile reveal"> Habilidades</h2>
     <ul class="lista_habilidaes reveal">
 
       <li class="item_habilidades ">
@@ -177,12 +169,12 @@
   <section class="segunda-linha-habilidades-mobile">
     <ul class="lista_habilidaes reveal" >
       
-      <li class="item_habilidades " style="transform: translateX(270%);">
+      <li class="item_habilidades " >
         <p class="descriçao_lista">Figma</p>
         <i  style="display: flex; justify-content: center;" class="fa-brands fa-figma fa-2x icon-figma" ></i>
        
       </li>
-      <li class="item_habilidades " style="transform: translateX(300%);">
+      <li class="item_habilidades " >
         <p class="descriçao_lista">React</p>
         <i  style="display: flex; justify-content: center;"  class="fa-brands fa-react fa-2x icon-react"></i>
       </li>
@@ -362,17 +354,29 @@
   <script>
   
   const swiper = new Swiper('.swiper', {
-    effect: 'cube',
-    cubeEffect: {
-      slideShadows: false,
-    },
-
-    autoplay: {
-    delay: 3000, // Tempo entre os slides (em milissegundos)
-    disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
+  effect: 'cube',
+  loop: true,
+  cubeEffect: {
+    shadow: false, // Desativa a sombra para melhorar o desempenho
+    slideShadows: false, // Desativa sombras nos slides
+    shadowOffset: 20,
+    shadowScale: 0.94,
   },
-  speed: 1000,
-  });
+  speed: 500, // Acelera a transição para suavizar o efeito
+  autoplay: {
+    delay: 4000, // Mantém um tempo razoável entre as transições
+    disableOnInteraction: false, // Continua o autoplay mesmo após interação
+  },
+  lazy: {
+    loadPrevNext: true, // Carrega apenas slides ao redor
+  },
+  preloadImages: false, // Não carrega todas as imagens de uma vez
+  loopAdditionalSlides: 1, // Minimiza o número de slides no loop
+  slidesPerView: 1, // Um slide por vez
+  grabCursor: true, // Melhora a interação do usuário com o slider
+  observer: true, // Reage às mudanças no DOM de forma eficiente
+  observeParents: true, // Reage às mudanças de pais no DOM
+});
   </script>
 
 <script>
@@ -386,10 +390,6 @@
   });
 </script>
 <script src="java.js"></script>
-<script
-src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-crossorigin="anonymous"
-></script>
+
 </body>
 </html>
