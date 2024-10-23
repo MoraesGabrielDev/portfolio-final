@@ -208,49 +208,16 @@ ul.segunda_linha_habilidades{
 
 @media screen and (max-width: 576px) {
 
-  .titulo_habilidades_mobile{
-    display: none;
-    }
-
-  .minhas-habilidades{
-    margin: 4em 0;
-   
-  }
-
-  .titulo_habilidades{
-    font-size: 1.3em;
-  }
-
-  .descriçao_lista{
-    font-size: 0.8em;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 1em;
-    padding: 1em;
-  }
-
-  .item_habilidades{
-    margin: 3em 1.5em;
-   
-  }
-
-  .icon-tailwind{
-    width: 70px;
-    margin-left: 1.5em;
-    margin-top: 0.8em;
-  }
-
-
-}
-
-@media screen and (max-width: 430px) {
   #section-mobile{
-    transform: translateX(18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     }
   
   .titulo_habilidades_mobile{
     font-size: 1.3em;
+  
     display: block;
     font-family: var(--fonte-cabeçalho);
  text-align: center;
@@ -263,10 +230,11 @@ ul.segunda_linha_habilidades{
 
   .item_habilidades{
     width: 3em;
-    margin: 2em 0.5em;
-   height: 4em;
+    margin: 3em 0.8em;
+   height: 4.4em;
    
   }
+
 
   .descriçao_lista{
     text-align: center;
@@ -296,15 +264,87 @@ ul.segunda_linha_habilidades{
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
-  margin: 2em 1em;
-  transform: translateY(-27%);
+ 
+  transform: translateY(8%);
+}
+#section-mobile{
+  display: block;
+  }
+.segunda-linha-habilidades-mobile{
+align-items: center;
+ justify-content: center;
+  display: flex;
+  margin-top:-2em ;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 430px) {
+  #section-mobile{
+    text-align: center;
+    }
+  
+  .titulo_habilidades_mobile{
+    font-size: 1.3em;
+  
+    display: block;
+    font-family: var(--fonte-cabeçalho);
+ text-align: center;
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 2em;
+  }
+
+  .item_habilidades{
+    width: 3em;
+    margin: 3em 0.5em;
+   height: 4.4em;
+   
+  }
+
+
+  .descriçao_lista{
+    text-align: center;
+    padding: 0.3;
+    margin-bottom: -10px;
+    font-size: 0.5em;
+  }
+  .icon-tailwind{
+    width: 40px;
+    margin-left: 0.3em;
+    align-items: center;
+  }
+
+
+  li.item_habilidades #pg-2 {
+    display: none !important;
+  }
+
+ #section_desk{
+  display: none;
+}
+.titulo_habilidades{
+  text-align: center;
+}
+
+.item_habilidades.tailwind{
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
+ 
+  transform: translateY(8%);
 }
 #section-mobile{
   display: block;
   }
 .segunda-linha-habilidades-mobile{
   margin-top: -3em;
-  display: block;
+  text-align: center;
 }
 
 
@@ -313,19 +353,51 @@ ul.segunda_linha_habilidades{
 
 
 @media screen and (max-width: 390px) {
+
   #section-mobile{
-  transform: translateX(15%);
-  }
+    text-align: center;
+    }
   .segunda-linha-habilidades-mobile{
   transform: translate(-2%);
   }
+  .titulo_habilidades_mobile{
+    font-size: 1.3em;
+    
+  }
+  .item_habilidades.tailwind{
+    transform: translateY(10%);
+    }
+
+    .item_habilidades{
+      width: 3em;
+      margin: 3em 0.5em;
+     height: 4.4em;
+     
+    }
+
 }
 
 @media screen and (max-width: 375px) {
   #section-mobile{
-    transform: translateX(15%);
+    text-align: center;
     }
     .segunda-linha-habilidades-mobile{
-    transform: translate(-4%);
+   text-align: center;
+    }
+
+    .item_habilidades.tailwind{
+    transform: translateY(10%);
+    }
+
+    .item_habilidades{
+      width: 3em;
+      margin: 3em 0.5em;
+     height: 4.4em;
+     
+    }
+    .titulo_habilidades_mobile{
+      font-size: 1.3em;
+      
+     
     }
 }
